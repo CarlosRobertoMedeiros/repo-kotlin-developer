@@ -3,51 +3,47 @@
 ![Spring](https://img.shields.io/badge/springboot-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![Gradle](https://img.shields.io/badge/Gradle-02303A.svg?style=for-the-badge&logo=Gradle&logoColor=white)
 
-Repositorio contendo código fonte genérico básico de Kotlin
+Repository containing generic source code for Kotlin
 
-## 🚀 Começando
+## 🚀 Started
 
-Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+These instructions will allow you to get a copy of the project running on your local machine for development and testing purposes.
 
-Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
+See **[Implantação](#-implanta%C3%A7%C3%A3o)** to learn how to implement the project.
 
-### 📋 Pré-requisitos
+### 📋 Requirements
 
-- Necessário a instalação da OpenJDK(Free) de acordo com a versão do projeto 
-- Necessário como gerenciador de dependência gradle
+- Installation of OpenJDK (Free) according to the project version 
+- Gradle dependency manager
 
-### 🔧 Links para as versões do Projeto
-  - Versão AdoptiumOpenJdk versão 'jdk-17.0.9+9.1'
+### 🔧 Links
+  - AdoptiumOpenJdk version 'jdk-17.0.9+9.1'
   - Link: https://adoptium.net/download/
-  - Gerenciador de Dependencia: 'gradle 8.5'
+  - Dependency Manager: 'gradle 8.5'
   - Link: https://gradle.org/install/ 
-  - Segue Link da documentação:
+  - Follow documentation link:
 
-| Assunto                | Link                                                                                                           |
-| ---------------------- | -------------------------------------------------------------------------------------------------------------- |
-| 01-Fundamentos Gerais  | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer-/tree/master/fundamentos/fundamentos-gerais)   |
-| 02-Teste Unitário      | [Teste Unitario com Kotlin](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer-/tree/master/fundamentos/testeunitario)       | 
-| 03-Microservice-alunos | [Exemplo de Microservice](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer-/tree/master/microservicos/microservice-alunos) |
+| Assunto                 | Link                                                                                                           |
+| ------------------------|--------------------------------------------------------------------------------------------------------------- |
+| 01-Basic Instructions   | [Basic Instructions](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/basic-instructions)   |
+| 02-Teste Unitário       | [Unit Test](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/unit-test)   | 
+| 03-Coroutines framework | [coroutines-framework](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework) |
 
-## 🖇️ Colaborando
+## 🖇️ Colaboration
 
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
+Please, read the [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) to get details about source code
 
-## 📌 Versão
+## 📌 Semantic Version Control
 
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
+We are using [SemVer](http://semver.org/) for version control. See the product version in tags [tags neste repositório](https://github.com/suas/tags/do/projeto). 
 
-## ✒️ Autores
+## ✒️ Author
 
-* **Carlos Roberto - dev ** - *Trabalho e Documentação*
+* **Carlos Roberto - dev ** - *Dev and Documentation*
 
-## 📄 Licença
+## 🎁 Gratitude Expression
 
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
-
-## 🎁 Expressões de gratidão
-
-* Obrigado Deus pela execução do projeto;
+* Thank you GOD for the execution about these projects;
 
 ---
-⌨️ com ❤️ por [Carlos Roberto] 😊
+⌨️ with ❤️ for [Carlos Roberto] 😊
