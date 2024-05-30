@@ -24,10 +24,10 @@ See **[Implantação](#-implanta%C3%A7%C3%A3o)** to learn how to implement the p
   - Dependency Coroutines Framework: kotlinx-coroutines-core:1.8.0
   - Link: https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md#using-in-your-projects
 
-| Subject                  | Link                                                                                                                                                             |
-| ------------------------ | -----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0 -Versão Geral        | [Teste Unitario Visao Geral](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/blob/main/fundamentals/unit-test/sample-unit-test/src/test/kotlin/br/com/roberto/kotlin/sample_unit_test/MainTest.kt)  |
-| 1.1 -Coverage Básico     | [Teste Unitario Coverage](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/blob/main/fundamentals/unit-test/sample-unit-test/src/test/kotlin/br/com/roberto/kotlin/sample_unit_test/PortariaTest.kt) |
+| Subject                       | Link                                                                                                                                         |
+|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.0 -Unit Test         		|                                                                                                                                              |
+| 1.1 -sample-unit-test         | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/unit-test/sample-unit-test) |
 
 ## 🖇️ Colaboration
 
