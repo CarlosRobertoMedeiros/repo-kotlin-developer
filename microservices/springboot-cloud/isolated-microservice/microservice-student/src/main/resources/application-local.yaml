@@ -1,0 +1,18 @@
+#actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, prometheus
+
+
+#custom path for swagger-ui
+springdoc:
+  swagger-ui:
+    path: /swaggerui.html
+    operationsSorter: alpha
+    tagsSorter: alpha
+
+  # custom path for api docs
+  api-docs:
+    path: /api-docs

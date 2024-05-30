@@ -1,0 +1,469 @@
+openapi: 3.0.3
+info:
+  title: Microservice Student - Api
+  description: |-
+    This is a Student Server API. It is responsible for creating and retrieving of an existent student. This document is based on the OpenAPI 3.0 specification.
+  version: 1.0.0
+externalDocs:
+  description: Find more about where this service is used
+  url: http://solutionarchdoc.com
+servers: [
+  {
+    "url": "localhost:8080/microservice-student/v1",
+    "description": "Local server"
+  },
+  {
+    "url": "https://development.microservice-student.com/v1",
+    "description": "Development server"
+  },
+  {
+    "url": "https://staging.microservice-student.com/v1",
+    "description": "Staging server"
+  }
+]
+tags:
+  - name: students
+    description: Everything About Yours Students
+    externalDocs:
+      description: Find out more
+      url: http://solutionarchdoc.especificsubject.com
+
+paths:
+
+  /students:
+    get:
+      tags:
+        - students
+      summary: Get All Students Pageable
+      operationId: getStudents
+      parameters:
+        - in: query
+          name: page
+          description: Current Page Index for Student
+          required: true
+          schema:
+            type: integer
+            format: int32
+        - in: query
+          name: pageSize
+          description: Max count of items on a page for Student
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentResponsePage'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/StudentResponsePage'
+        '204':
+          description: Successful
+        '400':
+          description: Invalid ID supplied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+
+    post:
+      tags:
+        - students
+      summary: Add a New Student
+      description: Add a New Student
+      operationId: addStudent
+      requestBody:
+        description: Create a new Student
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StudentRequest'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/StudentRequest'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/StudentRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/StudentResponse'
+        '400':
+          description: Invalid ID Supplied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+        '422':
+          description: Validation exception
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+
+  /students/cpf/{cpf}:
+    get:
+      tags:
+        - students
+      summary: Find Student by Cpf
+      description: Returns a Single Student
+      operationId: getStudentByCpf
+      parameters:
+        - name: cpf
+          in: path
+          description: Cpf of Student to Return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful Operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/StudentResponse'
+        '400':
+          description: Invalid ID Supplied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+
+  /students/name/{name}:
+    get:
+      tags:
+        - students
+      summary: Find Student by Name
+      description: Returns a Single Student
+      operationId: getStudentByName
+      parameters:
+        - name: name
+          in: path
+          description: Name of Student to Return
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful Operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/StudentResponse'
+        '400':
+          description: Invalid ID Supplied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+
+  /students/{studentId}:
+    get:
+      tags:
+        - students
+      summary: Find Student by Id
+      description: Returns a Single Student
+      operationId: getStudentById
+      parameters:
+        - name: studentId
+          in: path
+          description: ID of Student to Return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful Operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/StudentResponse'
+        '400':
+          description: Invalid ID Supplied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+
+    put:
+      tags:
+        - students
+      summary: Update the Student
+      description: Update the Student
+      operationId: updateStudent
+      parameters:
+        - name: studentId
+          in: path
+          description: studentId that need to be informed for others attributes changed
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        description: Update an existent user in the store
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StudentRequest'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/StudentRequest'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/StudentRequest'
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/StudentResponse'
+        '400':
+          description: Invalid ID Supplied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+        '422':
+          description: Validation exception
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+    delete:
+      tags:
+        - students
+      summary: Delete the Student
+      description: Delete the Student.
+      operationId: deleteStudent
+      parameters:
+        - name: studentId
+          in: path
+          description: The studentId that will be deleted
+          required: true
+          schema:
+            type: integer
+      responses:
+        '204':
+          description: Successful
+        '400':
+          description: Invalid ID Supplied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+        '404':
+          description: Student Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentErrorResponse'
+components:
+  schemas:
+
+    StudentRequest:
+      type: object
+      required:
+        - cpf
+        - name
+        - birthday
+        - gender
+      properties:
+        cpf:
+          type: string
+          example: 95526624005
+        name:
+          type: string
+          example: fehguy
+        birthday:
+          type: string
+          format: date-time
+          example: 2024-04-24 15:30:00Z
+        gender:
+          type: string
+          description: M - Male, F - Female
+          example: M
+          enum: [M, F]
+
+
+    StudentResponse:
+      type: object
+      required:
+        - studentId
+        - cpf
+        - name
+        - birthday
+        - gender
+        - createdAt
+        - udpatedAt
+      properties:
+        studentId:
+          type: integer
+          format: int64
+          example: 10
+        cpf:
+          type: string
+          example: 95526624005
+        name:
+          type: string
+          example: fehguy
+        birthday:
+          type: string
+          format: date-time
+          example: 2024-04-24 15:30:00Z
+        gender:
+          type: string
+          description: M - Male, F - Female
+          example: M
+          enum: [M, F]
+        createdAt:
+          type: string
+          format: date-time
+          example: 2024-04-24 15:30:00Z
+        updatedAt:
+          type: string
+          format: date-time
+          example: 2024-04-24 15:30:00Z
+
+    StudentResponsePage:
+      type: object
+      required:
+        - page
+        - pageSize
+        - totalPages
+        - totalElements
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/StudentResponse'
+        totalPages:
+          type: integer
+          format: int32
+        totalElements:
+          type: integer
+          format: int64
+        pageSize:
+          type: integer
+          format: int32
+        page:
+          type: integer
+          format: int32
+
+    StudentErrorResponse:
+      type: object
+      required:
+        - timestamp
+        - status
+      properties:
+        timestamp:
+          type: string
+          format: date-time
+        status:
+          type: string
+        message:
+          type: string
+        debugMessage:
+          type: string

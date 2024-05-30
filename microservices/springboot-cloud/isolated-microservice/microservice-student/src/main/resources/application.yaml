@@ -1,0 +1,9 @@
+server:
+  port: 8031
+  servlet:
+    context-path: /microservice-student
+
+spring:
+  profiles:
+    default: local
+    active: local

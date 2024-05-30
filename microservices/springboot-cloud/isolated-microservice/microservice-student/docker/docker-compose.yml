@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+
+  #MongoDB
+  #url de conexao:
+  # mongodb://dbstudentadm:dbstudentadm@127.0.0.1:27017/db_student?authMechanism=DEFAULT
+  mongo:
+    image: mongo:${DB_MONGO_VERSION}
+    container_name: local-mongo-db-${DB_MONGO_VERSION}
+    restart: always
+    volumes:
+      - ./db/local-mongo-data:/data/db
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+    environment:
+      MONGO_INITDB_DATABASE: ${DB_MONGO_DATABASE}
+      MONGO_INITDB_ROOT_USERNAME: ${DB_MONGO_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${DB_MONGO_ROOT_PASSWORD}
+    ports:
+      - "27017:27017"
+    networks:
+      - stack1-network
+
+volumes:
+  local-mongo-data:
+
+networks:
+  stack1-network:
+    driver: bridge

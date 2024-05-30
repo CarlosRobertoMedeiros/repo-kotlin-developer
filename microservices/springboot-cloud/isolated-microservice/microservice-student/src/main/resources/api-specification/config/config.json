@@ -1,0 +1,18 @@
+{
+  "dateLibrary": "java8",
+  "library": "spring-boot",
+  "useTags": "true",
+  "groupId": "br.com.roberto",
+  "serializableModel": "true",
+  "interfaceOnly": "true",
+  "skipDefaultInterface": "true",
+  "unhandledException": "true",
+  "useSpringBoot3": "true",
+  "useBeanValidation": "true",
+  "basePackage": "br.com.roberto.microservice_student",
+  "modelPackage": "br.com.roberto.microservice_student.model",
+  "apiPackage": "br.com.roberto.microservice_student.api",
+  "configPackage": "br.com.roberto.microservice_student.configuration",
+  "additionalModelTypeAnnotations": "@lombok.Builder @lombok.NoArgsConstructor @lombok.AllArgsConstructor",
+  "useFeignClientUrl": "true"
+}
