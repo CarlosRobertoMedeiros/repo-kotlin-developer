@@ -23,11 +23,11 @@ See **[Implantação](#-implanta%C3%A7%C3%A3o)** to learn how to implement the p
   - Link: https://gradle.org/install/ 
   - Follow documentation link:
 
-| Subjects                | Link                                                                                                           |
-| ------------------------|--------------------------------------------------------------------------------------------------------------- |
-| 01-Basic Instructions   | [Basic Instructions](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/basic-instructions)   |
-| 02-Teste Unitário       | [Unit Test](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/unit-test)   | 
-| 03-Coroutines framework | [coroutines-framework](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework) |
+| Subjects                | Link                                                                                                                               |
+| ------------------------|----------------------------------------------------------------------------------------------------------------------------------- |
+| 01-Basic Instructions   | [Basic Instructions](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/basic-instructions)     |
+| 02-Teste Unitário       | [Unit Test](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/unit-test/sample-unit-test)                       |
+| 03-Coroutines framework | [Coroutines-Framework](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework) |
 
 ## 🖇️ Colaboration
 
