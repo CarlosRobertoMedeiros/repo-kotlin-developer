@@ -23,7 +23,7 @@ See **[Implantação](#-implanta%C3%A7%C3%A3o)** to learn how to implement the p
   - Link: https://gradle.org/install/ 
   - Follow documentation link:
 
-| Assunto                 | Link                                                                                                           |
+| Subjects                | Link                                                                                                           |
 | ------------------------|--------------------------------------------------------------------------------------------------------------- |
 | 01-Basic Instructions   | [Basic Instructions](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/basic-instructions)   |
 | 02-Teste Unitário       | [Unit Test](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/unit-test)   | 
