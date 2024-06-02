@@ -400,9 +400,8 @@ components:
         - udpatedAt
       properties:
         studentId:
-          type: integer
-          format: int64
-          example: 10
+          type: string
+          example: 4d6579d4-c3e7-38a1-9246-017e903b2c33
         cpf:
           type: string
           example: 95526624005
