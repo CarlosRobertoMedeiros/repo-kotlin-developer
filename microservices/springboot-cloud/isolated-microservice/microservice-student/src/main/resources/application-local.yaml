@@ -5,7 +5,7 @@ spring:
       host: 127.0.0.1
       port: 27017
       database: db_student
-      uri: mongodb://dbstudentadm:dbstudentadm@127.0.0.1:27017/db_student
+      uri: mongodb://dbstudentadm:dbstudentadm@127.0.0.1:27017/db_student?authSource=admin
            #"mongodb://dbstudentadm:dbstudentadm@127.0.0.1:27017/db_student?authMechanism=DEFAULT"
       authentication-database: dbstudentadm
       username: dbstudentadm
