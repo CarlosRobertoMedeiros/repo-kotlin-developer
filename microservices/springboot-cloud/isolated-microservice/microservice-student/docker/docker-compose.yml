@@ -22,7 +22,7 @@ services:
 
 volumes:
   local-mongo-data:
-
+  
 networks:
   stack1-network:
-    driver: bridge
+    driver: bridge  

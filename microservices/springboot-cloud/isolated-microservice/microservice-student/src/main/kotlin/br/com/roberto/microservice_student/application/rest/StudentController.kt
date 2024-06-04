@@ -13,6 +13,7 @@ import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
+import java.time.LocalDateTime
 
 @RestController
 @RequestMapping("/v1/student")
@@ -21,6 +22,9 @@ class StudentController(
     private val metrics: AppMetrics
 ) : StudentsApi {
     override fun addStudent(studentRequest: StudentRequest): ResponseEntity<StudentResponse> {
+
+        val myDate = LocalDateTime.now()
+        print(myDate)
 
         val studentModel = studentService.addStudent(StudentRequestConverter.toDomain(studentRequest))
         val innerStudentResponse = StudentResponseConverter.fromDomain(studentModel)

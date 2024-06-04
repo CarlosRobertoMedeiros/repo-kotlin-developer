@@ -3,7 +3,7 @@ package br.com.roberto.microservice_student.domain.model
 import br.com.roberto.microservice_student.domain.model.enum.Gender
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
-import java.time.OffsetDateTime
+import java.time.LocalDateTime
 
 @Document(collection = "col_student")
 data class StudentModel(
@@ -11,8 +11,8 @@ data class StudentModel(
     val studentId: String?,
     val cpf: String,
     val name: String,
-    val birthday: OffsetDateTime,
+    val birthday: LocalDateTime,
     val gender: Gender,
-    val createdAt: OffsetDateTime? = OffsetDateTime.now(),
-    val updatedAt: OffsetDateTime? = OffsetDateTime.now()
+    val createdAt: LocalDateTime? = LocalDateTime.now(),
+    val updatedAt: LocalDateTime? = LocalDateTime.now()
 )

@@ -20,10 +20,10 @@ data class StudentResponseConverter(
             studentId =  studentModel.studentId!!,
             cpf = studentModel.cpf,
             name = studentModel.name,
-            birthday = studentModel.birthday,
+            birthday = studentModel.birthday.toString(),
             gender = StudentResponse.Gender.valueOf(studentModel.gender.toString()),
-            createdAt = studentModel.createdAt!!,
-            updatedAt = studentModel.updatedAt
+            createdAt = studentModel.createdAt.toString(),
+            updatedAt = studentModel.updatedAt.toString()
         )
     }
 }

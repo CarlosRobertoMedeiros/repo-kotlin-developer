@@ -8,5 +8,5 @@ db.createUser({
 db.createUser({
   user: "dbstudentadm",
   pwd: "dbstudentadm",
-  roles: [ { role: "readWrite", db: "student_db" } ]
+  roles: [ { role: "readWrite", db: "dbstudent" } ]
 });

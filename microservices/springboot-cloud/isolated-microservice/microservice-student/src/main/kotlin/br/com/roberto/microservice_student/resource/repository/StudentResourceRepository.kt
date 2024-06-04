@@ -5,5 +5,5 @@ import org.springframework.data.mongodb.repository.MongoRepository
 import org.springframework.stereotype.Repository
 
 @Repository
-interface StudentResourceRepository : MongoRepository<StudentModel, Long> {
+interface StudentResourceRepository : MongoRepository<StudentModel, String> {
 }

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component
 @Component
 class StudentResource(val studentResourceRepository:StudentResourceRepository) : StudentRepository {
     override fun addStudent(studentModel: StudentModel): StudentModel {
-        return studentResourceRepository.insert(studentModel)
+        return studentResourceRepository.save(studentModel)
     }
 
 
