@@ -3,16 +3,20 @@ services:
 
   #MongoDB
   #url de conexao:
-  # mongodb://dbstudentadm:dbstudentadm@127.0.0.1:27017/db_student?authMechanism=DEFAULT
-  mongo:
+  # mongodb://dbstudentadm:dbstudentadm@127.0.0.1:27017/dbstudent?authMechanism=DEFAULT
+  mongodb:
     image: mongo:${DB_MONGO_VERSION}
     container_name: local-mongo-db-${DB_MONGO_VERSION}
+    hostname: localhost
     restart: always
     volumes:
-      - ./db/local-mongo-data:/data/db
-      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./mongodb/config/initdb.d/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - ./mongodb/mongodb-data:/data/db/
+      - ./mongodb/mongodb-log:/var/log/mongodb/
+      
+    env_file:
+      - .env
     environment:
-      MONGO_INITDB_DATABASE: ${DB_MONGO_DATABASE}
       MONGO_INITDB_ROOT_USERNAME: ${DB_MONGO_ROOT_USERNAME}
       MONGO_INITDB_ROOT_PASSWORD: ${DB_MONGO_ROOT_PASSWORD}
     ports:
@@ -21,7 +25,12 @@ services:
       - stack1-network
 
 volumes:
-  local-mongo-data:
+  mongodb-data:
+    driver: local
+    name: mongo-data
+  mongodb-log:
+    driver: local
+    name: mongo-log
   
 networks:
   stack1-network:

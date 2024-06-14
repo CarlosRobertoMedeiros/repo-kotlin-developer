@@ -32,10 +32,10 @@ springdoc:
 
 
 #logging
-logging:
-  level:
-    root: DEBUG
-    org.springframework: DEBUG
-    com.seu.pacote: DEBUG
-  pattern:
-    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+#logging:
+#  level:
+#    root: DEBUG
+#    org.springframework: DEBUG
+#    com.seu.pacote: DEBUG
+#  pattern:
+#    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"

@@ -40,5 +40,6 @@ out/
 .kotlin
 
 ### docker ###
-/docker/db/
+/docker/mongodb/mongodb-data
+/docker/mongodb/mongodb-log
 

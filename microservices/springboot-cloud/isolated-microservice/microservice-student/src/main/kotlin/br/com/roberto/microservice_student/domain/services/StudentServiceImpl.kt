@@ -10,7 +10,8 @@ class StudentServiceImpl(
     private val studentRepository: StudentRepository
 ) : StudentService {
     override fun addStudent(studentModel: StudentModel): StudentModel {
-        return studentRepository.addStudent(studentModel)
+        return studentRepository.save(studentModel)
     }
+
 
 }

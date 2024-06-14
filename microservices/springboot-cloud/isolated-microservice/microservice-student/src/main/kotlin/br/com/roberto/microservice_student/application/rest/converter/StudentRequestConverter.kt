@@ -19,10 +19,7 @@ data class StudentRequestConverter(
             cpf = studentRequest.cpf,
             name = studentRequest.name,
             birthday = LocalDateTime.parse(studentRequest.birthday),
-            gender = Gender.valueOf(studentRequest.gender.toString()),
-            studentId =  null,
-            createdAt = null,
-            updatedAt = null
+            gender = null
         )
     }
 }
