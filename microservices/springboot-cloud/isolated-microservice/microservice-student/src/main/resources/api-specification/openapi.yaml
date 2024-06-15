@@ -242,8 +242,7 @@ paths:
           description: ID of Student to Return
           required: true
           schema:
-            type: integer
-            format: int64
+            type: string
       responses:
         '200':
           description: Successful Operation
@@ -285,7 +284,7 @@ paths:
           description: studentId that need to be informed for others attributes changed
           required: true
           schema:
-            type: integer
+            type: string
       requestBody:
         description: Update an existent user in the store
         content:
@@ -338,7 +337,7 @@ paths:
           description: The studentId that will be deleted
           required: true
           schema:
-            type: integer
+            type: string
       responses:
         '204':
           description: Successful
@@ -400,7 +399,7 @@ components:
       properties:
         studentId:
           type: string
-          example: 4d6579d4-c3e7-38a1-9246-017e903b2c33
+          example: 1
         cpf:
           type: string
           example: 95526624005
