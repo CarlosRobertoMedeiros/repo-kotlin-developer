@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("/v1/student")
+@RequestMapping("/v1")
 class StudentController(
     private val studentService: StudentService,
     private val metrics: AppMetrics
