@@ -27,12 +27,12 @@ Two solutions were provided: the first one demonstrates a violation of SRP princ
 
 ## Arch Violated SRP
 <p align="center">
-  <img src= "https://github.com/CarlosRobertoMedeiros/posigti/blob/main/flow-principal/fluxo-principal.png" />
+  <img src= "https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/blob/main/solid/solid-instructions/src/main/kotlin/br/com/roberto/solid/srp/violation/img/srp-violated.png" />
 </p>
 
 ## Arch Implementing according SRP
 <p align="center">
-  <img src= "https://github.com/CarlosRobertoMedeiros/posigti/blob/main/flow-principal/fluxo-principal.png" />
+  <img src= "https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/blob/main/solid/solid-instructions/src/main/kotlin/br/com/roberto/solid/srp/solution/img/srp-green.png" />
 </p>
 
 

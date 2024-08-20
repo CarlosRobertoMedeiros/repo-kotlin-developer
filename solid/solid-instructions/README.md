@@ -24,8 +24,8 @@ See **[Implantação](#-implanta%C3%A7%C3%A3o)** to learn how to implement the p
 
 | Subject | Link                                                                                                                       |
 |---------|----------------------------------------------------------------------------------------------------------------------------|
-| srp     | [Single Responsability Principle](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals)  |
-| ocp     | [Open Closed Principle](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/microservices)            |
+| srp     | [Single Responsability Principle](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/solid/solid-instructions/src/main/kotlin/br/com/roberto/solid/srp)  |
+| ocp     | [Open Closed Principle]()            |
 
 
 ## 🖇️ Colaboration
