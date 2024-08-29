@@ -6,8 +6,8 @@ import kotlinx.coroutines.runBlocking
 import kotlin.system.measureTimeMillis
 
 /**
- * Sample Using the Concurrency function with thread using coroutines
- * Was divided the 1_000_000 numbers in in 4 parts(250_000) Lists and each part executed the squarevalue
+ * Sample Using the Concurrent function with thread using coroutines
+ * Was divided the 1_000_000 numbers in 4 parts(250_000) Lists and each part executed the square-value
  * and in the end happened the sum of values.
  *
  *

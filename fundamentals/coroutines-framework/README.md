@@ -24,17 +24,17 @@ See **[Implantação](#-implanta%C3%A7%C3%A3o)** to learn how to implement the p
   - Dependency Coroutines Framework: kotlinx-coroutines-core:1.8.0
   - Link: https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md#using-in-your-projects
 
-| Subject                       | Link                                                                                                                                                                                                                      |
-|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0 -Coroutines Basic         |                                                                                                                                                                                                                           |
-| 1.1 -Simple Example           | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/blob/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/a) |
-| 1.2 -Refactoring for Function | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/b) |
-| 1.3 -Routine Scope            | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/c) |
-| 1.4 -Job Example              | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/d) |
-| 1.5 -Routines Cancel          | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/e) |
-| 1.6 -TimeOut Routines         | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/f) |
-| 1.7 -Exploring Sunspend fun   | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/g) |
-| 1.8 -Concurrency and Parallel | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/zz) |
+| Subject                       | Link                                                                                                                                                                                                 |
+|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.0 -Coroutines Basic         |                                                                                                                                                                                                      |
+| 1.1 -Simple Example           | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/blob/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/a)  |
+| 1.2 -Refactoring for Function | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/b)  |
+| 1.3 -Routine Scope            | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/c)  |
+| 1.4 -Job Example              | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/d)  |
+| 1.5 -Routines Cancel          | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/e)  |
+| 1.6 -TimeOut Routines         | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/f)  |
+| 1.7 -Exploring Sunspend fun   | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/g)  |
+| 1.8 -Concurrency and Parallel | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/za) |
 
 ## 🖇️ Colaboration
 
