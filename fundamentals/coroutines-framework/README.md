@@ -34,6 +34,7 @@ See **[Implantação](#-implanta%C3%A7%C3%A3o)** to learn how to implement the p
 | 1.5 -Routines Cancel          | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/e) |
 | 1.6 -TimeOut Routines         | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/f) |
 | 1.7 -Exploring Sunspend fun   | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/g) |
+| 1.8 -Concurrency and Parallel | [Fundamentos da Linguagem](https://github.com/CarlosRobertoMedeiros/repo-kotlin-developer/tree/main/fundamentals/coroutines-framework/src/main/kotlin/br/com/roberto/kotlin/coroutines_framework/zz) |
 
 ## 🖇️ Colaboration
 
