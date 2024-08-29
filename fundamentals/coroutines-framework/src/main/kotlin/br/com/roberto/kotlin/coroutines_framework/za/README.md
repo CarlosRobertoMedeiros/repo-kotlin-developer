@@ -29,7 +29,7 @@ See **[Implantação](#-implanta%C3%A7%C3%A3o)** to learn how to implement the p
 ### 🚨 Scenario:
 
 Suppose we have a list of 1 million numbers and we need to calculate the square of each number. We divide the work into 4 parts (250 thousand numbers in each part) and use 4 threads to process this list.
-- **Concurrency** with a single-core processor (Threaded Simulation):
+- **Concurrent** with a single-core processor (Threaded Simulation):
   In this case, the processor has a single core, but is capable of executing multiple threads concurrently. This means that it switches quickly between threads, giving the impression that all 4 threads are running at the same time. `Division of work: 1 million numbers are divided into 4 parts of 250 thousand numbers each. Execution with concurrency: The processor does not process two tasks at the same time, but switches between the 4 threads, switching from one to the other every short interval of time.`
 
 Time Impact:
