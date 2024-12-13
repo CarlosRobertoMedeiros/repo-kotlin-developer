@@ -52,6 +52,10 @@ data class Gamer(var nome:String , var email:String){
 
     }
 
+    fun alugaJogo(jogo : Jogo) : Aluguel {
+        return Aluguel(this, jogo)
+    }
+
     companion object {
         fun criarGamer(leitura: Scanner): Gamer {
             println("Boas vindas ao AluGames! Vamos fazer seu cadastro. Digite seu nome:")
